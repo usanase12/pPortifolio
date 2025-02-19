@@ -1,0 +1,391 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  #home {
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  #skills {
+    background-color: #ddd;
+  }
+  
+
+  .project {
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  /* HOME SIDE */
+  /* Home Section Styles */
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: #000;
+    color: #eaeaea;
+  }
+  
+  .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .home-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .home-text h1 {
+    color: #fff; /* Sets the name text color to white */
+    font-size: 3rem; /* Adjusts the font size if needed */
+    font-weight: bold; /* Makes the name bold (optional) */
+  }
+  
+  .home-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image img {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 5px solid #ccc; /* Optional border for better styling */
+  }
+
+  .intro-text {
+    font-size: 1rem; /* Sets the font size to be smaller */
+    line-height: 1.6; /* Adjusts spacing between lines for better readability */
+    color: #ddd; /* Light gray color for contrast on dark backgrounds */
+    margin-top: 20px; /* Adds space above the paragraph */
+    max-width: 600px; /* Limits the width for a clean layout */
+    text-align: justify; /* Aligns text for a polished look */
+  }
+  
+
+  /* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #B5684A;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #555;
+  }
+
+
+/* SKILLS */
+/* Skills Section */
+#skills {
+    padding: 40px;
+    background: #f8f9fa; /* Light gray background */
+    color: #333;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .skills-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Skills Grid */
+  /* Skills Section */
+#skills {
+    padding: 40px;
+    background: #f8f9fa;
+    color: #333;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .skills-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; /* Space between skill cards */
+  }
+  
+  /* Skill Card */
+  .skill-card {
+    display: flex; /* Align image and text horizontally */
+    align-items: center; /* Align items vertically in the center */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Makes cards responsive */
+    max-width: 500px;
+    margin: auto; /* Center cards in the grid */
+    gap: 20px; /* Space between the image and the text */
+  }
+  
+  /* Skill Card Image */
+  .skill-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  /* Skill Text */
+  .skill-text h3 {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 5px;
+  }
+  
+  .skill-text p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* PROJECTS */
+/* Projects Section */
+#projects {
+    padding: 40px;
+    background:  #b49da2;
+    color: #333;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ece6e6;
+  }
+  
+  .projects-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #f3ecec;
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-card img {
+    width: 100%; /* Full width inside the card */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit the image height for consistency */
+    object-fit: cover; /* Crop images to fill the container if needed */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .github-button {
+    display: inline-block;
+    background: #706063;
+    color: #030101;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .github-button:hover {
+    background: #0056b3;
+  }
+
+  /* CONTACT */
+  /* Contact Us Section */
+#contact {
+    padding: 60px 20px;
+    background: #7B5E53; /* Light pink background */
+    text-align: center; /* Center text horizontally */
+    color: #969395; /* Dark pink text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure it takes up full viewport height */
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #241d22;
+  }
+  
+  #contact p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #312d2f;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
+  /* Form Styling */
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    width: 100%;
+    max-width: 400px; /* Limit form width */
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #aa949f;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #contact button {
+    background: #B5684A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #contact button:hover {
+    background: #E6005C; /* Darker pink on hover */
+  }
+  
+  
+  
+  
+  
+  
+
+
+  
+  
